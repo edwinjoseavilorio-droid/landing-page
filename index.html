@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Información y Noticias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2a5298;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #2a5298;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        .developer-credits {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .developer-credits h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .developer-name {
+            display: inline-block;
+            margin: 8px 15px 8px 0;
+            padding: 8px 12px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                padding: 12px 15px;
+                font-size: 0.9em;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚽ FÚTBOL</h1>
+        <p>La pasión del deporte rey</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#competiciones">Competiciones</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bienvenido al Fútbol</h2>
+        <p>El fútbol es el deporte más popular del mundo, jugado por millones de personas en todas partes del planeta. Es un deporte que une culturas, generaciones y crea momentos inolvidables.</p>
+    </section>
+
+    <section id="historia">
+        <h2>Historia del Fútbol</h2>
+        <div class="info-grid">
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Orígenes</h3>
+                <p>Los juegos con pelota que podían considerarse precursores del fútbol moderno se practicaban en varias culturas. En 1863, se establecieron las primeras reglas del fútbol moderno en Inglaterra.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🏆</div>
+                <h3>Evolución Global</h3>
+                <p>El fútbol se propagó rápidamente por todo el mundo, convirtiéndose en el deporte más popular. La FIFA se fundó en 1904 para organizar el fútbol a nivel internacional.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🌍</div>
+                <h3>Actualidad</h3>
+                <p>Hoy en día, el fútbol es practicado en más de 200 países. La Copa Mundial es el evento deportivo más visto en todo el mundo, con miles de millones de espectadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competiciones">
+        <h2>Principales Competiciones</h2>
+        <div class="info-grid">
+            <div class="card">
+                <div class="icon">🥇</div>
+                <h3>Copa Mundial</h3>
+                <p>Torneo internacional más importante del fútbol, celebrado cada 4 años. Las selecciones nacionales compiten por el título mundial.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🏅</div>
+                <h3>Liga Profesional</h3>
+                <p>Competiciones domesticas donde equipos de cada país juegan entre sí durante toda la temporada para coronar al campeón nacional.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⭐</div>
+                <h3>Copa de Campeones</h3>
+                <p>Torneos continentales que enfrentan a los mejores equipos de cada continente. Ejemplo: Champions League en Europa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reglas">
+        <h2>Reglas Básicas del Fútbol</h2>
+        <div class="info-grid">
+            <div class="card">
+                <div class="icon">👥</div>
+                <h3>Jugadores</h3>
+                <p>11 jugadores por equipo en el campo: 1 portero, 10 jugadores de campo (defensas, centrocampistas y delanteros).</p>
+            </div>
+            <div class="card">
+                <div class="icon">⏱️</div>
+                <h3>Duración</h3>
+                <p>El partido dura 90 minutos divididos en dos tiempos de 45 minutos cada uno, más tiempo adicional si es necesario.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>Objetivo</h3>
+                <p>Anotar más goles que el equipo contrario. Un gol se consigue cuando el balón cruza completamente la línea de meta.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🚫</div>
+                <h3>Penalizaciones</h3>
+                <p>Las faltas resultan en tarjetas amarillas (2 = expulsión) o directamente tarjeta roja para infracciones graves.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <h3>Información de Contacto</h3>
+        <p>Email: info@futbol.com</p>
+        <p>Teléfono: +1-800-FUTBOL-1</p>
+        <p>Síguenos en redes sociales para más contenido sobre fútbol</p>
+
+        <div class="developer-credits">
+            <h4>Desarrolladores:</h4>
+            <div>
+                <span class="developer-name">Edwin Jose Contreras</span>
+                <span class="developer-name">Carlos Daniel Ascanio</span>
+                <span class="developer-name">Miguel Angel Ochoa</span>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.9em;">© 2025 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
